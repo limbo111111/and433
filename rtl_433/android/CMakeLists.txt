@@ -294,6 +294,7 @@ set(RTL433_CORE_SOURCES
     ${RTL433_SRC}/devices/secplus_v1.c
     ${RTL433_SRC}/devices/secplus_v2.c
     ${RTL433_SRC}/devices/sharp_spc775.c
+    ${RTL433_SRC}/devices/flipper_arf_auto_protocols.c
     ${RTL433_SRC}/devices/silvercrest.c
     ${RTL433_SRC}/devices/simplisafe.c
     ${RTL433_SRC}/devices/simplisafe_gen3.c

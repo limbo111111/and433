@@ -8,6 +8,11 @@
 #include "r_device.h"
 
 #define DEVICES \
+    DECL(flipper_arf_subaru) \
+    DECL(flipper_arf_hkr) \
+    DECL(flipper_arf_mazda) \
+    DECL(flipper_arf_vag) \
+    DECL(flipper_arf_santafe) \
     DECL(silvercrest) \
     DECL(rubicson) \
     DECL(prologue) \

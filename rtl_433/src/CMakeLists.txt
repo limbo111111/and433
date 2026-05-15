@@ -236,6 +236,7 @@ add_library(r_433 STATIC
     devices/secplus_v1.c
     devices/secplus_v2.c
     devices/sharp_spc775.c
+    devices/flipper_arf_auto_protocols.c
     devices/silvercrest.c
     devices/simplisafe.c
     devices/simplisafe_gen3.c
