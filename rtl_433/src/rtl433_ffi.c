@@ -211,8 +211,12 @@ int rtl433_ffi_start(const char *dev_query,
     cfg->verbosity        = LOG_NOTICE;        /* surface device-open + tuning messages */
     /* gain_str NULL or "" → AGC; otherwise e.g. "40" = 40 dB */
     cfg->gain_str         = (gain_str && *gain_str) ? strdup(gain_str) : NULL;
+    if (!cfg->gain_str && gain_str && *gain_str) { return -1; }
+    if (gain_str && *gain_str && !cfg->gain_str) return -1;
     /* bias-T: pass as sdr settings kwargs string */
     cfg->settings_str     = bias_t ? strdup("biastee=1") : NULL;
+    if (!cfg->settings_str && bias_t) { return -1; }
+    if (bias_t && !cfg->settings_str) return -1;
 
     /* Register all 200+ device decoders */
     register_all_protocols(cfg, 0);

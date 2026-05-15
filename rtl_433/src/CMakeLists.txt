@@ -39,6 +39,7 @@ add_library(r_433 STATIC
     r_util.c
     raw_output.c
     rfraw.c
+    rtl433_ffi.c
     samp_grab.c
     sdr.c
     term_ctl.c
@@ -129,6 +130,7 @@ add_library(r_433 STATIC
     devices/fineoffset_ws85.c
     devices/fineoffset_ws90.c
     devices/flex.c
+    devices/flipper_arf_auto_protocols.c
     devices/flowis.c
     devices/fordremote.c
     devices/fs20.c

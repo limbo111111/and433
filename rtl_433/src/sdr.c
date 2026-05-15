@@ -477,6 +477,7 @@ static int sdr_open_rtl_fd(sdr_dev_t **out_dev, int fd, const char *device_path,
 
     static const char info_tpl[] = "{\"vendor\":\"\", \"product\":\"RTL-SDR\", \"serial\":\"\"}";
     dev->dev_info = malloc(sizeof(info_tpl));
+    if (!dev->dev_info) { free(dev); return -1; }
     if (dev->dev_info)
         memcpy(dev->dev_info, info_tpl, sizeof(info_tpl));
 
