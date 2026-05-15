@@ -39,6 +39,7 @@ add_library(r_433 STATIC
     r_util.c
     raw_output.c
     rfraw.c
+    rtl433_ffi.c
     samp_grab.c
     sdr.c
     term_ctl.c
@@ -129,6 +130,7 @@ add_library(r_433 STATIC
     devices/fineoffset_ws85.c
     devices/fineoffset_ws90.c
     devices/flex.c
+    devices/flipper_arf_auto_protocols.c
     devices/flowis.c
     devices/fordremote.c
     devices/fs20.c
@@ -236,7 +238,6 @@ add_library(r_433 STATIC
     devices/secplus_v1.c
     devices/secplus_v2.c
     devices/sharp_spc775.c
-    devices/flipper_arf_auto_protocols.c
     devices/silvercrest.c
     devices/simplisafe.c
     devices/simplisafe_gen3.c

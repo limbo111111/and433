@@ -1,8 +1,12 @@
+/** @file
+    Flipper ARF auto protocols
+*/
+
 #include "decoder.h"
 #include <string.h>
 
 // -------------------------------------------------------------------------
-// Subaru
+/** Subaru */
 // -------------------------------------------------------------------------
 static int subaru_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 {
@@ -38,7 +42,7 @@ static int subaru_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
     }
 
     data_t *data = data_make(
-            "model",    "", DATA_STRING, "Subaru-ARF",
+            "model",    "", DATA_STRING, "Flipper-Subaru",
             "id",       "", DATA_FORMAT, "%08x", id,
             "counter",  "", DATA_INT,    ctr,
             "button",   "", DATA_INT,    btn,
@@ -63,7 +67,7 @@ r_device const flipper_arf_subaru = {
 };
 
 // -------------------------------------------------------------------------
-// Hyundai/Kia RIO
+/** Hyundai/Kia RIO */
 // -------------------------------------------------------------------------
 static int hkr_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 {
@@ -100,7 +104,7 @@ static int hkr_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
     }
 
     data_t *data = data_make(
-            "model",    "", DATA_STRING, "Hyundai-Kia-RIO-ARF",
+            "model",    "", DATA_STRING, "Flipper-Hyundai",
             "id",       "", DATA_FORMAT, "%08x", serial,
             "button",   "", DATA_INT,    btn,
             "mic",      "", DATA_STRING, "CHECKSUM",
@@ -124,7 +128,7 @@ r_device const flipper_arf_hkr = {
 };
 
 // -------------------------------------------------------------------------
-// Mazda Siemens
+/** Mazda Siemens */
 // -------------------------------------------------------------------------
 static int mazda_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 {
@@ -163,7 +167,7 @@ static int mazda_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
     }
 
     data_t *data = data_make(
-            "model",    "", DATA_STRING, "Mazda-Siemens-ARF",
+            "model",    "", DATA_STRING, "Flipper-Mazda",
             "id",       "", DATA_FORMAT, "%06x", serial,
             "hop",      "", DATA_FORMAT, "%08x", hop,
             "counter",  "", DATA_INT,    ctr,
@@ -189,7 +193,7 @@ r_device const flipper_arf_mazda = {
 };
 
 // -------------------------------------------------------------------------
-// VAG pre-2004
+/** VAG pre-2004 */
 // -------------------------------------------------------------------------
 static int vag_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 {
@@ -229,7 +233,7 @@ static int vag_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
     }
 
     data_t *data = data_make(
-            "model",    "", DATA_STRING, "VAG-2004-ARF",
+            "model",    "", DATA_STRING, "Flipper-VAG",
             "id",       "", DATA_FORMAT, "%08x", tid,
             "counter",  "", DATA_INT,    ctr,
             "button",   "", DATA_INT,    btn,
@@ -254,7 +258,7 @@ r_device const flipper_arf_vag = {
 };
 
 // -------------------------------------------------------------------------
-// Hyundai Santa Fe 13-16
+/** Hyundai Santa Fe 13-16 */
 // -------------------------------------------------------------------------
 static int santafe_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 {
@@ -299,7 +303,7 @@ static int santafe_arf_decode(r_device *decoder, bitbuffer_t *bitbuffer)
     }
 
     data_t *data = data_make(
-            "model",    "", DATA_STRING, "SantaFe-ARF",
+            "model",    "", DATA_STRING, "Flipper-SantaFe",
             "id",       "", DATA_FORMAT, "%06x", serial,
             "rolling",  "", DATA_FORMAT, "%08x", rolling,
             "counter",  "", DATA_INT,    ctr,
