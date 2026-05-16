@@ -110,6 +110,6 @@ r_device const tpms_nissan = {
         .long_width  = 120, // FSK
         .reset_limit = 250, // Maximum gap size before End Of Message [us]. TODO What should this be?
         .decode_fn   = &tpms_nissan_callback,
-        .disabled    = 1, // no MIC, disabled by default
+        .disabled    = 0, // no MIC, disabled by default
         .fields      = output_fields,
 };
