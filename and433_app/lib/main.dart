@@ -309,10 +309,8 @@ class _DecoderPageState extends State<DecoderPage> {
     bool loading = false;
 
     if (!mounted) return false;
-    // ignore: use_build_context_synchronously
-    final dialogCtx = context;
     return await showDialog<bool>(
-          context: dialogCtx,
+          context: context,
           barrierDismissible: false,
           builder: (ctx) => StatefulBuilder(
             builder: (ctx, setS) => AlertDialog(
