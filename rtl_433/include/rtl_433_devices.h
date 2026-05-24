@@ -313,7 +313,13 @@
     DECL(tpms_trw_ook) \
     DECL(tpms_trw_fsk) \
     DECL(govee_h5059) \
-
+    DECL(flipper_arf_kia_v0) \
+    DECL(flipper_arf_kia_v1) \
+    DECL(flipper_arf_kia_v2) \
+    DECL(flipper_arf_kia_v3_v4) \
+    DECL(flipper_arf_kia_v5) \
+    DECL(flipper_arf_kia_v6) \
+    DECL(flipper_arf_kia_v7) \
     /* Add new decoders here. */
 
 #define DECL(name) extern r_device name;
