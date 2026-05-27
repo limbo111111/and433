@@ -75,6 +75,6 @@ r_device const hondaremote = {
         .long_width  = 500,
         .reset_limit = 2000,
         .decode_fn   = &hondaremote_callback,
-        .disabled    = 1, // no MIC, weak sanity checks
+        .disabled    = 0, // no MIC, weak sanity checks
         .fields      = output_fields,
 };

@@ -13,6 +13,13 @@
     DECL(flipper_arf_mazda) \
     DECL(flipper_arf_vag) \
     DECL(flipper_arf_santafe) \
+    DECL(flipper_arf_kia_v0) \
+    DECL(flipper_arf_kia_v1) \
+    DECL(flipper_arf_kia_v2) \
+    DECL(flipper_arf_kia_v3_v4) \
+    DECL(flipper_arf_kia_v5) \
+    DECL(flipper_arf_kia_v6) \
+    DECL(flipper_arf_kia_v7) \
     DECL(silvercrest) \
     DECL(rubicson) \
     DECL(prologue) \

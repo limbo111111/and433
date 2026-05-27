@@ -120,6 +120,6 @@ r_device const tpms_jansite = {
         .long_width  = 52,  // FSK
         .reset_limit = 150, // Maximum gap size before End Of Message [us].
         .decode_fn   = &tpms_jansite_callback,
-        .disabled    = 1, // Unknown checksum
+        .disabled    = 0, // Unknown checksum
         .fields      = output_fields,
 };
